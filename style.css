@@ -88,26 +88,39 @@ body {
   display: flex;
   align-items: center;
   margin-top: 7rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url('img/alexander-naglestad-RFhq0SrrgEg-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
+  filter: blur(4px);
+  transform: scale(1.03);
+  z-index: 0;
 }
 
 .hero::after {
-  content: '';         
+  content: '';
   display: block;
   position: absolute;
   width: 100%;
   height: 40%;
   bottom: 0;
   background: linear-gradient(0deg, rgba(1,1,3,1) 5%, rgba(255,255,255,0) 50%);
+  z-index: 1;
 }
 
 .hero .content {
   padding: 1.4rem 7%;
   max-width: 60rem;
+  position: relative;
+  z-index: 2;
 }
 
 .hero .content h1 {
@@ -154,7 +167,46 @@ body {
 
 .about h2 span {
   color: var(--primary);
-  
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.about .row .about-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  pointer-events: none;
+}
+
+.about .row .about-img img {
+  width: 100%;
+  max-width: 36rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 2rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
 }
 
 /* Media Queries */
@@ -204,6 +256,29 @@ body {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 35rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+  
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
   }
 }
 
