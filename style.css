@@ -250,6 +250,7 @@ body {
 .about .row .content h3 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  margin-left: 2rem;
   font-family: var(--font-heading);
   font-weight: 400;
   color: var(--primary);
@@ -262,6 +263,7 @@ body {
 
 .about .row .content p {
   margin-bottom: 0.8rem;
+  margin-left: 2rem;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.6;
