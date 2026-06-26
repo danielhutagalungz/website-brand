@@ -6,23 +6,34 @@
     <title>Kopi Kenangan Senja</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     
     <!-- Fonts End -->
 
     <!-- My Style -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+        @keyframes typing {
+            0% {
+                width: 0
+            }
+            50% {
+                width: 62%
+            }
+            100% {
+                width: 0
+            }
+        }
+        
+        @keyframes blink {
+            from {
+                border-color: transparent
+            }
+            to {
+                border-color: white
+            }
+        }
+    </style>
     <!-- My style End -->
 
     <!-- Feather Icons -->
@@ -42,9 +53,9 @@
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        <a href="#" id="search"><i data-feather="search" width="30" height="30"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart" width="30" height="30"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu" width="30" height="30"></i></a>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -52,6 +63,7 @@
     <!-- Hero Section Start -->
     <section class="hero" id="home">
       <main class="content">
+        <p id="sapaan" class="sapaan"></p>
         <h1>Let's Look You're in <span>Luxury</span></h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, sapiente.</p>
         <a href="#" class="cta">Order Now !</a>
@@ -69,7 +81,7 @@
           <img src="img/benjamin-r-Ci_fZ5cL9Jo-unsplash (1).jpg" alt="About us">
         </div>
         <div class="content">
-          <h3>Why choose our suit?</h3>
+          <h3>Why choose our <span>suit?</span></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quibusdam incidunt dignissimos soluta, molestiae veniam.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nisi eaque rem esse qui saepe molestias mollitia obcaecati, aspernatur tempora!</p>
         </div>
@@ -86,5 +98,6 @@
 
     <!-- My Javascript -->
      <script src="js/main.js"></script>
+     <script src="js/script.js"></script>
   </body>
 </html>
