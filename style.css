@@ -154,7 +154,7 @@ html, body {
   animation: typing 4s steps(20) infinite, blink .6s infinite;
   font-family: var(--font-body);
   font-weight: 400; 
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--primary);
 
 }

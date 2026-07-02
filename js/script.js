@@ -7,7 +7,7 @@ function getSapaan() {
 }
 
 function updateSapaan() {
-  document.getElementById("sapaan").textContent = `Halo Pengguna, ${getSapaan()}!`;
+  document.getElementById("sapaan").textContent = `Halo Pengguna, ${getSapaan()} !`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
