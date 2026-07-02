@@ -26,6 +26,11 @@ body {
   color: #fff;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -369,7 +374,8 @@ body {
 }
 
 .contact .row {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 2.5rem;
   margin-top: 2rem;
@@ -681,7 +687,7 @@ body {
 }
 
 /* Mobile Phone */
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   html {
     font-size: 55%;
   }
