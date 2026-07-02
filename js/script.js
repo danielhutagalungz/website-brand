@@ -6,8 +6,11 @@ function getSapaan() {
   return "Selamat Malam";
 }
 
-document.getElementById("sapaan").textContent = `Halo, ${getSapaan()}!`;
-
-setInterval(() => {
+function updateSapaan() {
   document.getElementById("sapaan").textContent = `Halo Pengguna, ${getSapaan()}!`;
-}, 1000);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateSapaan();
+  setInterval(updateSapaan, 60 * 1000);
+});

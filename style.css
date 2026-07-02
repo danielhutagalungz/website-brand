@@ -146,16 +146,17 @@ html, body {
 }
 
 .hero .content .sapaan {
+  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid white;
   width: 0;
   animation: typing 4s steps(20) infinite, blink .6s infinite;
-  font-family: var(--font-sub);
-  font-weight: 400;
+  font-family: var(--font-body);
+  font-weight: 400; 
   font-size: 2rem;
   color: var(--primary);
-  letter-spacing: 1.5px;
+
 }
 
 .hero .content h1 {
@@ -379,6 +380,7 @@ html, body {
   grid-template-columns: 1.1fr 0.9fr;
   gap: 2.5rem;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .contact-panel {
@@ -399,6 +401,12 @@ html, body {
   margin-bottom: 1rem;
   font-family: var(--font-heading);
   color: var(--primary);
+  text-align: center;
+}
+
+.contact-summary h3 span {
+  color: var(--aksen);
+  font-weight: 700;
 }
 
 .contact-summary p {
@@ -438,7 +446,7 @@ html, body {
 }
 
 .contact-form {
-  padding: 3rem;
+  padding: 2.5rem;
   display: grid;
   gap: 1.5rem;
   border-radius: 2rem;
@@ -451,6 +459,7 @@ html, body {
   font-size: 2.4rem;
   font-family: var(--font-heading);
   color: var(--primary);
+  text-align: center;
 }
 
 .contact-form .input-group {
@@ -610,6 +619,26 @@ html, body {
     font-size: 62.5%;
   }
 
+  .navbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .navbar .navbar-logo {
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .navbar .navbar-extra {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .navbar .navbar-extra a {
+    margin: 0;
+  }
+
   #hamburger-menu {
     display: inline-block;
   }
@@ -634,8 +663,8 @@ html, body {
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
-    font-family: var(--font-sub);
-    font-weight: 500;
+    font-family: var(--font-body);
+    font-weight: 400;
   }
 
   .navbar .navbar-nav a::after {
@@ -683,6 +712,10 @@ html, body {
 
   .contact .row form {
     padding-top: 0;
+  }
+
+  .contact .row .contact-form h3 {
+    margin-top: 1.4rem;
   }
 }
 
