@@ -310,12 +310,16 @@ html, body {
 .menu .row .menu-card {
   background: #232323;
   border-radius: 10px;
-  overflow: hidden;
   border: 1px solid #2E2E2E;
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
+  width: 19rem;
+  min-height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu .row .menu-card:hover {
@@ -700,6 +704,10 @@ html, body {
 
   .menu p {
     font-size: 1.2rem;
+  }
+
+  .menu .row {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact .row {
