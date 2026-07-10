@@ -151,7 +151,7 @@ html, body {
   white-space: nowrap;
   border-right: 3px solid white;
   width: 0;
-  animation: typing 4s steps(20) infinite, blink .6s infinite;
+  animation: typing 6s steps(40, end) infinite, blink 0.75s step-end infinite;
   font-family: var(--font-body);
   font-weight: 400; 
   font-size: 1.5rem;
