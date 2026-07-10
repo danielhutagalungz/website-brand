@@ -732,4 +732,8 @@ html, body {
   html {
     font-size: 55%;
   }
+
+  .menu .row {
+    grid-template-columns: 1fr;
+  }
 }
